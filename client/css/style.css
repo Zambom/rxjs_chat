@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100vh;
+  background: #242424;
+}
+
+.rooms-list {
+  margin: 1rem;
+  padding: 0;
+  position: relative;
+}
+.messages-container {
+  margin: 1rem 1rem 1rem 0;
+}
+.rooms-list, .messages-container {
+  height: 95vh;
+  border-radius: 1rem;
+  background: #303134;
+}
+
+.room-header, .msgs-header {
+  height: 4rem;
+  border-bottom: 1px solid #242424;
+}
+.room-header h4, .msgs-header h4 {
+  margin: 0;
+  color: #e5efe5
+}
+
+.new-chat-btn {
+  position: absolute;
+  padding: .5rem .75rem;
+  bottom: 2%;
+  right: 5%;
+}
+
+.rooms {
+  height: 75vh;
+  overflow: auto;
+  border-radius: unset;
+}
+.rooms li {
+  background: transparent;
+  border-radius: initial !important;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+.rooms li.active, .rooms li:hover {
+  background: #28292b;
+}
+.rooms li:not(:last-of-type) .room-item {
+  border-bottom: 1px solid #dddddd;
+}
+.rooms .room-item {
+  width: 100%;
+  padding: .5rem 0;
+  color: #e5efe5;
+}
+
+.msgs-container {
+  height: 75vh;
+  margin: 0 .05rem;
+  background: #28292b;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.msgs-footer {
+  height: 4rem;
+}
+.msgs-footer input, .msgs-footer input:focus {
+  background: transparent;
+  color: #e5efe5;
+}
+.msgs-footer input:focus {
+  box-shadow: unset;
+}
+.send-btn {
+  padding: .5rem .75rem;
+}
+
+.msg-item {
+  margin: 1rem 1rem 0 1rem;
+}
+.msg-item.system-msgs .alert {
+  font-size: .65rem;
+  padding: .3rem .5rem;
+}
+.msg-item .alert {
+  padding: .5rem .75rem;
+  margin: 0;
+}
+.msg-item h6, .msg-item p {
+  margin-bottom: 0;
+}
+.msg-item .textmsg {
+  font-size: .95rem;
+}
+.msg-item .datetime {
+  font-size: .65rem;
+}
